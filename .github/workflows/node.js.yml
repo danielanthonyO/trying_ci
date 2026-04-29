@@ -36,12 +36,7 @@ jobs:
         run: npm run test:unit
 
   frontend-unit:
-    name: Frontend Unit Tests
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: frontend
 
     steps:
       - name: Checkout
@@ -55,13 +50,20 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install frontend dependencies
+        working-directory: frontend
         run: npm ci
 
       - name: Run frontend unit tests
-        run: npm run test:unit
+        working-directory: frontend
+        run: npm test
+        env:
+          VITE_API_URL: http://localhost:3000
 
       - name: Run frontend typecheck
+        working-directory: frontend
         run: npm run typecheck
+
+ 
 
   backend-integration:
     name: Backend Integration Tests
