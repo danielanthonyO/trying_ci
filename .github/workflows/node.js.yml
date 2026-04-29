@@ -36,6 +36,7 @@ jobs:
         run: npm run test:unit
 
   frontend-unit:
+    name: Frontend Unit Tests
     runs-on: ubuntu-latest
 
     steps:
