@@ -1,0 +1,62 @@
+.customersContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---------Search and filter-------- */
+
+.searchWrapper {
+  outline: none;
+  border: 1px solid #676767;
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 18rem;
+  max-width: 35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.searchWrapper:focus-within {
+  border: 1px solid #1251ff;
+}
+.searchInput,
+.typeFilter {
+  outline: none;
+  border: none;
+  text-align: left;
+  display: flex;
+}
+
+.searchInput {
+  flex: 1;
+}
+.typeFilter {
+  text-align: right;
+}
+
+.searchAndCreate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+/* ---------Create button-------- */
+.createBtn {
+  background: #f59e0b;
+  color: #fff;
+  padding: 1rem;
+  border: 1px solid #1251ff;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+.createBtn button {
+  font-weight: bold;
+}

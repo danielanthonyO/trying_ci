@@ -1,0 +1,270 @@
+.page {
+  padding: 24px;
+  display: grid;
+  gap: 20px;
+  background: #f8f4ef;
+  min-height: 100%;
+}
+
+.toast {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  background: #fff;
+  border: 1px solid #efe2d2;
+  padding: 10px 12px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(31, 26, 20, 0.12);
+  z-index: 9999;
+  font-weight: 800;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.titleWrap {
+  display: grid;
+  gap: 8px;
+}
+
+.kicker {
+  font-size: 12px;
+  color: #7a6e62;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  color: #1f1a14;
+  letter-spacing: -0.02em;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b4036;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  background: #f59e0b;
+  border: 1px solid #f59e0b;
+  color: #1f1a14;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(245, 158, 11, 0.18);
+}
+
+.primaryBtn:hover {
+  filter: brightness(0.98);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.secondaryBtn {
+  background: #fffaf2;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #6b3f00;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.secondaryBtn:hover {
+  border-color: rgba(245, 158, 11, 0.85);
+}
+
+.secondaryBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #efe2d2;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 22px rgba(31, 26, 20, 0.04);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 4px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.65);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.cardTitle {
+  font-weight: 900;
+  font-size: 18px;
+  color: #1f1a14;
+  padding-left: 10px;
+}
+
+.muted {
+  color: #7a6e62;
+  padding-left: 10px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.rowList {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  padding-left: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3e7d8;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowLabel {
+  color: #7a6e62;
+  font-weight: 700;
+}
+
+.rowValue {
+  color: #1f1a14;
+  font-weight: 800;
+  text-align: right;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 1px solid #efe2d2;
+}
+
+.pillDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.pillPlanned {
+  background: #fff5de;
+  color: #a06c00;
+}
+
+.pillInProgress {
+  background: #eaf4ff;
+  color: #1b67b2;
+}
+
+.pillDone {
+  background: #e8f7ec;
+  color: #257a3e;
+}
+
+.pillCancelled {
+  background: #fff0f0;
+  color: #b93c3c;
+}
+
+.historyList {
+  display: grid;
+  gap: 12px;
+  padding-left: 10px;
+}
+
+.historyItem {
+  border: 1px solid #efe2d2;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fffaf5;
+}
+
+.historyTime {
+  color: #8f7d68;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.historyContent {
+  display: grid;
+  gap: 4px;
+}
+
+.historyStatus {
+  font-weight: 800;
+  color: #1f1a14;
+}
+
+.historyNote {
+  color: #5f5449;
+}
+
+@media (max-width: 980px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .rowValue {
+    text-align: left;
+  }
+}

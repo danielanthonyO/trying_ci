@@ -1,0 +1,197 @@
+.page {
+  display: grid;
+  gap: 18px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.backBtn {
+  border: 1px solid #e5d6c4;
+  background: #fff;
+  color: #2a2119;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.heroCard {
+  background: #fffaf2;
+  border: 1px solid #efe2d2;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #efe2d2;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+}
+
+.heroText {
+  min-width: 0;
+}
+
+.kicker {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #8a6d47;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 4px 0;
+  font-size: 30px;
+  font-weight: 950;
+  color: #231b14;
+}
+
+.sub {
+  color: #7a6e62;
+  font-weight: 700;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #efe2d2;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 900;
+  color: #231b14;
+  margin-bottom: 14px;
+}
+
+.detailList {
+  display: grid;
+  gap: 12px;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3e8da;
+}
+
+.label {
+  color: #7a6e62;
+  font-weight: 700;
+}
+
+.value {
+  color: #231b14;
+  font-weight: 800;
+  text-align: right;
+}
+
+.workOrderList {
+  display: grid;
+  gap: 10px;
+}
+
+.workOrderRow {
+  border: 1px solid #efe2d2;
+  background: #fffaf6;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.workOrderTitle {
+  font-weight: 900;
+  color: #231b14;
+}
+
+.workOrderMeta {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #7a6e62;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.badgePlanned {
+  background: #fff7ed;
+  color: #7a4f1e;
+  border-color: #f0cfa8;
+}
+
+.badgeInProgress {
+  background: #eef6ff;
+  color: #0b5cab;
+  border-color: #cfe6ff;
+}
+
+.badgeDone {
+  background: #eefbf3;
+  color: #0f6a3b;
+  border-color: #cfeedd;
+}
+
+.badgeCancelled {
+  background: #fff1f1;
+  color: #a11b1b;
+  border-color: #ffd0d0;
+}
+
+.empty {
+  border-radius: 14px;
+  border: 1px dashed #dfcfbc;
+  background: #fbf7f1;
+  padding: 18px;
+  color: #7c6e60;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .workOrderRow,
+  .detailRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .value {
+    text-align: left;
+  }
+}

@@ -1,0 +1,190 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.tab {
+  background: #fffaf2;
+  border: 1px solid #e7d8c8;
+  color: #5a5047;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tabActive {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #1f1a14;
+}
+
+.tabBody {
+  display: grid;
+  gap: 16px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 900;
+  color: #1f1a14;
+  margin-bottom: 12px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field {
+  background: #fff;
+  border: 1px solid #efe2d2;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.label {
+  font-size: 13px;
+  color: #7a6e62;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.value {
+  color: #1f1a14;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.muted {
+  color: #7a6e62;
+}
+
+.miniList {
+  display: grid;
+  gap: 10px;
+}
+
+.miniRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3e7d8;
+}
+
+.miniRow:last-child {
+  border-bottom: none;
+}
+
+.lineList {
+  display: grid;
+  gap: 10px;
+}
+
+.lineItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 14px;
+  border: 1px solid #efe2d2;
+  border-radius: 12px;
+  background: #fffaf5;
+}
+
+.lineLeft {
+  color: #1f1a14;
+  font-weight: 700;
+}
+
+.lineRight {
+  color: #4b4036;
+  text-align: right;
+}
+
+.total {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #1f1a14;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footerBtn {
+  background: #fffaf2;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #6b3f00;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.footerBtn:hover {
+  border-color: rgba(245, 158, 11, 0.85);
+}
+
+.dangerBtn {
+  background: #fff1f1;
+  border-color: rgba(220, 38, 38, 0.35);
+  color: #991b1b;
+}
+
+.noteCard {
+  border: 1px solid #efe2d2;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fffaf5;
+}
+
+.noteHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.noteTitle {
+  font-weight: 800;
+  color: #1f1a14;
+}
+
+.noteTime {
+  font-size: 12px;
+  color: #7a6e62;
+}
+
+.noteText {
+  color: #3d342d;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .miniRow,
+  .lineItem,
+  .noteHeader {
+    flex-direction: column;
+  }
+
+  .lineRight {
+    text-align: left;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}

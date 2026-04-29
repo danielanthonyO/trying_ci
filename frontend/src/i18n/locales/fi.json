@@ -1,0 +1,92 @@
+{
+  "common": {
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "add": "Lisää",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "reset": "Nollaa"
+  },
+  "sidebar": {
+    "dashboard": "Etusivu",
+    "calendar": "Kalenteri",
+    "workOrders": "Työmääräykset",
+    "customers": "Asiakkaat",
+    "invoices": "Laskut",
+    "parts": "Osat",
+    "users": "Käyttäjät",
+    "settings": "Asetukset",
+    "sections": {
+      "workspace": "Työtila",
+      "system": "Järjestelmä"
+    },
+    "language": "Kieli"
+  },
+  "user": {
+    "title": "Käyttäjät",
+    "admin": "Ylläpitäjä",
+    "worker": "Työntekijä",
+    "trainee": "Harjoittelija",
+    "allRoles": "Kaikki roolit",
+    "filterByRole": "Suodata roolin mukaan",
+    "createNewUser": "Luo uusi käyttäjä",
+    "searchPlaceholder": "🔍 Hae käyttäjän nimeä, sähköpostia,...",
+    "noUsersFound": "Käyttäjiä ei löytynyt",
+    "resetPassword": "Vaihda salasana",
+    "newPassword": "Uusi salasana",
+    "confirmNewPassword": "Vahvista uusi salasana"
+  },
+  "customer": {
+    "title": "Asiakkaat",
+    "company": "Yritys",
+    "individual": "Yksityishenkilö",
+    "allTypes": "Kaikki tyypit",
+    "filterByType": "Suodata tyypin mukaan",
+    "createNewCustomer": "Luo uusi asiakas",
+    "searchPlaceholder": "🔍 Hae asiakkaan nimeä, sähköpostia,...",
+    "noCustomersFound": "Asiakkaita ei löytynyt",
+    "ordersLabel": "Tilaukset:"
+  },
+  "part": {
+    "title": "Osat",
+    "createNewPart": "Luo uusi osa",
+    "searchPlaceholder": "Hae osaa...",
+    "noPartsFound": "Osia ei löytynyt",
+    "model": "Malli",
+    "quantity": "Määrä",
+    "priceEur": "Hinta (€)",
+    "pricePlusTax": "Hinta + vero",
+    "priceBeforeTax": "Hinta (ennen veroa)",
+    "category": "Kategoria",
+    "manufacturer": "Valmistaja",
+    "link": "Linkki",
+    "allCategories": "Kaikki kategoriat",
+    "custom": "+ Mukautettu..."
+  },
+  "modals": {
+    "addNewCustomerTitle": "Lisää uusi asiakas",
+    "addNewUserTitle": "Lisää uusi käyttäjä",
+    "addNewPartTitle": "Lisää uusi osa",
+    "deleteUserTitle": "Poista käyttäjä",
+    "deleteCustomerTitle": "Poista asiakas",
+    "deletePartTitle": "Poista osa",
+    "deleteUserConfirm": "Poistetaanko tämä käyttäjä järjestelmästä?",
+    "deleteCustomerConfirm": "Poistetaanko tämä asiakas järjestelmästä?",
+    "deletePartConfirm": "Poistetaanko tämä osa järjestelmästä?",
+    "resetPasswordTitle": "Vaihda salasana"
+  },
+  "toast": {
+    "invalidEmail": "Virheellinen sähköposti",
+    "updateSaved": "Päivitys tallennettu",
+    "partCreated": "Osa luotu",
+    "partUpdated": "Osa päivitetty",
+    "userCreated": "Käyttäjä luotu",
+    "userDeleted": "Käyttäjä poistettu.",
+    "customerDeleted": "Asiakas poistettu.",
+    "passwordResetSuccess": "Salasana vaihdettu onnistuneesti!",
+    "passwordResetFailed": "Salasanan vaihto epäonnistui.",
+    "allFieldsRequired": "Kaikki kentät ovat pakollisia.",
+    "passwordMinLength": "Salasanassa täytyy olla vähintään 8 merkkiä.",
+    "passwordMismatch": "Salasana ja vahvistus eivät täsmää."
+  }
+}

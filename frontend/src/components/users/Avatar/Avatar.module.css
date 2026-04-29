@@ -1,0 +1,17 @@
+.avatar,
+.avatarByName {
+  border-radius: 50%;
+  border: none;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.avatarByName {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: none;
+}

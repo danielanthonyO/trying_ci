@@ -1,0 +1,118 @@
+.partCard,
+.editMode {
+  width: 100%;
+  max-width: 50rem;
+  min-width: 18rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: var(--card-border);
+  background: var(--card-bg);
+  transition: all 0.15s ease;
+}
+
+.partCard:hover {
+  background: #fff4e1;
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 1.5rem rgba(31, 26, 20, 0.1);
+}
+
+/* Card header section*/
+.cardHeader {
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  text-align: left;
+}
+.model {
+  width: 55%;
+}
+.quantity {
+  width: 15%;
+}
+.price {
+  width: 15%;
+}
+.priceTax {
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Expanded info section */
+.extraInfo,
+.formWrapper {
+  display: grid;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #efe2d2;
+}
+.formRow p {
+  margin: 0;
+}
+.label {
+  width: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+/* Action buttons under expanded card, in edit and delete modal */
+.actions,
+.deleteActions,
+.modalActions,
+.editActions {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 2rem;
+  max-width: 50rem;
+  min-width: 18rem;
+}
+.actions button,
+.deleteActions button,
+.modalActions button,
+.editActions button {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+/* Edit modal */
+.editMode {
+  background: var(--card-hover-bg);
+  padding: 2rem;
+}
+
+.editMode .formRow {
+  background: transparent;
+  border: none;
+}
+.input,
+.catInput {
+  background: #fff;
+  outline: none;
+  border: none;
+  text-align: left;
+  flex: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.input:focus,
+.catInput:focus-within {
+  border: 1px solid #1251ff;
+}
+.catInput select,
+.catInput input {
+  outline: none;
+  border: none;
+}

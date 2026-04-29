@@ -1,0 +1,249 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 26, 20, 0.55);
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  z-index: 9999;
+}
+
+.modal {
+  width: min(720px, 96vw);
+  background: #ffffff;
+  border: 1px solid #efe2d2;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(31, 26, 20, 0.22);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #fffaf2;
+  border-bottom: 1px solid #f2eadf;
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 950;
+  color: #1f1a14;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.closeBtn {
+  border: 1px solid #efe2d2;
+  background: #ffffff;
+  color: #4b4036;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background: #fff4e1;
+}
+
+.body {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.body input,
+.body select,
+.body textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #efe2d2;
+  background: #fff;
+  color: #1f1a14;
+  outline: none;
+}
+
+.body textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.body input:focus,
+.body select:focus,
+.body textarea:focus {
+  border-color: rgba(245, 158, 11, 0.8);
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.18);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #fffaf2;
+  border-top: 1px solid #f2eadf;
+}
+
+.btnPrimary {
+  background: #f59e0b;
+  border: 1px solid #f59e0b;
+  color: #1f1a14;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(245, 158, 11, 0.18);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btnSecondary {
+  background: #ffffff;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #6b3f00;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btnSecondary:hover {
+  border-color: rgba(245, 158, 11, 0.85);
+  background: #fffaf2;
+}
+
+/* Helpers used by list UIs inside modals */
+.listBox {
+  border: 1px solid #efe2d2;
+  border-radius: 12px;
+  overflow: auto;
+  max-height: 280px;
+  background: #fff;
+}
+
+/* ✅ FIXED: input aligned with name (no separate box) */
+.listRow {
+  display: grid;
+  grid-template-columns: 18px 1fr; /* input + text */
+  gap: 10px;
+  align-items: start; /* ✅ aligns with first text line */
+  padding: 12px;
+  border-bottom: 1px solid #f2eadf;
+  cursor: pointer;
+  user-select: none;
+}
+
+.listRow:last-child {
+  border-bottom: none;
+}
+
+.listRow:hover {
+  background: #fff6e6;
+}
+
+.listRowSelected {
+  background: rgba(245, 158, 11, 0.14);
+}
+
+
+.listRow input[type="radio"],
+.listRow input[type="checkbox"] {
+  width: auto;         
+  padding: 0;          
+  border-radius: 0;    
+  border: none;        
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  margin-top: 2px;    
+}
+
+.smallMuted {
+  font-size: 12px;
+  color: #7a6e62;
+}
+
+
+.rowText {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.rowTitle {
+  font-weight: 900;
+  color: #1f1a14;
+  line-height: 1.15;
+}
+
+.rowSub {
+  font-size: 12px;
+  color: #7a6e62;
+  line-height: 1.2;
+}
+
+/* Tabs / header controls */
+.pillTabs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tabBtn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 900;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: #fff;
+  color: #6b3f00;
+  cursor: pointer;
+}
+
+.tabBtnActive {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.65);
+}
+
+.clearBtn {
+  margin-left: auto;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 900;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: #fff;
+  color: #6b3f00;
+  cursor: pointer;
+}
+
+.footer button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 900;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  background: #ffffff;
+  color: #6b3f00;
+  cursor: pointer;
+}
+
+.footer button:last-child {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #1f1a14;
+  box-shadow: 0 6px 14px rgba(245, 158, 11, 0.18);
+}

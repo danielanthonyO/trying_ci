@@ -1,0 +1,135 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "reset": "Reset"
+  },
+
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "calendar": "Calendar",
+    "workOrders": "Work Orders",
+    "customers": "Customers",
+    "invoices": "Invoices",
+    "parts": "Parts",
+    "users": "Users",
+    "settings": "Settings",
+    "sections": { "workspace": "Workspace", "system": "System" },
+    "language": "Language"
+  },
+
+  "dashboard": {
+    "title": "Work overview",
+    "newWorkOrder": "+ New work order",
+    "stats": {
+      "active": "Active",
+      "planned": "Planned",
+      "done": "Done",
+      "cancelled": "Cancelled",
+      "thisWeek": "This week",
+      "revenue": "Revenue",
+      "inProgressHint": "In progress",
+      "plannedHint": "Waiting to start",
+      "doneHint": "Completed jobs",
+      "cancelledHint": "Cancelled jobs",
+      "thisWeekHint": "Created in last 7 days",
+      "revenueHint": "Invoice totals later"
+    },
+    "todaySchedule": "Today’s schedule",
+    "openCalendar": "Open calendar →",
+    "loading": "Loading…",
+    "noJobsToday": "No jobs scheduled today.",
+    "tipTitle": "Tip",
+    "tipText": "Click a job to open details. Use the Calendar page for full schedule.",
+    "latest": "Latest work orders",
+    "viewAll": "View all →",
+    "noOrders": "No work orders yet."
+  },
+
+  "status": {
+    "planned": "Planned",
+    "in_progress": "In progress",
+    "done": "Done",
+    "cancelled": "Cancelled",
+    "now": "● NOW"
+  },
+
+  "user": {
+    "title": "Users",
+    "admin": "Admin",
+    "worker": "Worker",
+    "trainee": "Trainee",
+    "allRoles": "All roles",
+    "filterByRole": "Filter by role",
+    "createNewUser": "Create New User",
+    "searchPlaceholder": "🔍 Search user name, email,...",
+    "noUsersFound": "No users found",
+    "resetPassword": "Reset password",
+    "newPassword": "New password",
+    "confirmNewPassword": "Confirm new password"
+  },
+
+  "customer": {
+    "title": "Customers",
+    "company": "Company",
+    "individual": "Individual",
+    "allTypes": "All types",
+    "filterByType": "Filter by type",
+    "createNewCustomer": "Create New Customer",
+    "searchPlaceholder": "🔍 Search customer name, email,...",
+    "noCustomersFound": "No customers found",
+    "ordersLabel": "Orders:"
+  },
+
+  "part": {
+    "title": "Parts",
+    "createNewPart": "Create New Part",
+    "searchPlaceholder": "Search part...",
+    "noPartsFound": "No parts found",
+    "model": "Model",
+    "quantity": "Quantity",
+    "priceEur": "Price (€)",
+    "pricePlusTax": "Price + Tax",
+    "priceBeforeTax": "Price (before tax)",
+    "category": "Category",
+    "manufacturer": "Manufacturer",
+    "link": "Link",
+    "allCategories": "All categories",
+    "custom": "+ Custom..."
+  },
+
+  "modals": {
+    "addNewCustomerTitle": "Add a new customer",
+    "addNewUserTitle": "Add a new user",
+    "addNewPartTitle": "Add a new part",
+
+    "deleteUserTitle": "Delete User",
+    "deleteCustomerTitle": "Delete Customer",
+    "deletePartTitle": "Delete Part",
+
+    "deleteUserConfirm": "Delete this user from the system?",
+    "deleteCustomerConfirm": "Delete this customer from the system?",
+    "deletePartConfirm": "Delete this part from the system?",
+
+    "resetPasswordTitle": "Reset password"
+  },
+
+  "toast": {
+    "invalidEmail": "Invalid email",
+    "updateSaved": "Update saved",
+    "partCreated": "Part created",
+    "partUpdated": "Part updated",
+    "userCreated": "User created",
+    "userDeleted": "User deleted.",
+    "customerDeleted": "Customer deleted.",
+
+    "passwordResetSuccess": "Password reset successfully!",
+    "passwordResetFailed": "Failed to reset password.",
+    "allFieldsRequired": "All fields are required.",
+    "passwordMinLength": "Password must have at least 8 characters.",
+    "passwordMismatch": "Password and confirmed password do not match."
+  }
+}

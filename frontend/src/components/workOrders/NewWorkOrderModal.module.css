@@ -1,0 +1,198 @@
+
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 15, 15, 0.55);
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    z-index: 9999;
+  }
+  
+
+  
+  .modal {
+    width: min(680px, 95vw); 
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1px solid #efe2d2;
+    border-radius: 18px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+    padding: 22px;
+    display: grid;
+    gap: 16px;
+  
+    box-sizing: border-box; 
+  }
+  
+
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 950;
+    color: #1f1a14;
+    letter-spacing: -0.02em;
+  }
+  
+  .closeBtn {
+    border: 1px solid #efe2d2;
+    background: #fff;
+    border-radius: 12px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+  }
+  
+  .closeBtn:hover {
+    background: #fff4e1;
+  }
+  
+
+  
+  .label {
+    display: grid;
+    gap: 8px;
+    font-weight: 700;
+    color: #3d3329;
+    font-size: 14px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    box-sizing: border-box; 
+    border: 1px solid #efe2d2;
+    border-radius: 14px;
+    padding: 12px 14px;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.2s ease;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: rgba(245, 158, 11, 0.9);
+    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.18);
+  }
+  
+
+  .textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+  
+ 
+  
+  .vehicleCard {
+    border: 1px solid #efe2d2;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fffaf2;
+    display: grid;
+    gap: 6px;
+  }
+  
+  .vehicleTitle {
+    font-weight: 900;
+    color: #1f1a14;
+  }
+  
+  .muted {
+    font-size: 13px;
+    color: #7a6e62;
+  }
+  
+  /* ===== FOOTER ===== */
+  
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  
+  .cancelBtn {
+    border: 1px solid rgba(245, 158, 11, 0.45);
+    background: #fff;
+    color: #6b3f00;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .cancelBtn:hover {
+    background: #fffaf2;
+  }
+  
+  .createBtn {
+    background: #f59e0b;
+    border: 1px solid #f59e0b;
+    color: #1f1a14;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(245, 158, 11, 0.25);
+    transition: 0.2s ease;
+  }
+  
+  .createBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(245, 158, 11, 0.35);
+  }
+  
+  .createBtn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  .plateRow {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .checkBtn {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #f59e0b;
+    background: #fffaf2;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .checkBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .errorBox {
+    background: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    color: #b30000;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+  }
+  
+  .successBox {
+    background: #e8f7e8;
+    border: 1px solid #b6e0b6;
+    color: #0b7a0b;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+  }

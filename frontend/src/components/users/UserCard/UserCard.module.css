@@ -1,0 +1,151 @@
+.userCard,
+.editMode {
+  width: 100%;
+  max-width: 50rem;
+  min-width: 18rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: var(--card-border);
+  background: var(--card-bg);
+  transition: all 0.15s ease;
+}
+
+.userCard:hover {
+  background: #fff4e1;
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 1.5rem rgba(31, 26, 20, 0.1);
+}
+
+/* Card header section*/
+.cardHeader {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem 1rem;
+  min-height: 4rem;
+}
+.cardHeaderContent {
+  text-align: left;
+  margin: 0;
+}
+
+.name,
+.role {
+  margin: 0;
+}
+
+.role {
+  border-radius: 2rem;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin {
+  background: #abfdab;
+}
+.worker {
+  background: var(--create-bg);
+}
+.trainee {
+  background: #91cfff;
+}
+
+/* Expanded info section */
+.extraInfo,
+.formWrapper {
+  padding-inline: 4rem 1rem;
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #efe2d2;
+}
+.formRow:focus-within {
+  border: 1px solid #1251ff;
+}
+.formRow p {
+  margin: 0;
+}
+.label {
+  width: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Action buttons under expanded card, in edit, delete, reset password modal */
+.actions {
+  padding-block: 1rem;
+  margin: 1.5rem 1rem 1.5rem 4rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  background: #e8eeff;
+}
+
+.deleteActions,
+.modalActions,
+.editActions,
+.resetActions {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 2rem;
+  max-width: 50rem;
+  min-width: 18rem;
+}
+.actions button,
+.deleteActions button,
+.modalActions button,
+.editActions button,
+.resetActions button {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+/* Edit modal */
+.editMode {
+  background: var(--card-hover-bg);
+  padding: 2rem;
+}
+.editMode .formWrapper {
+  padding-inline: 1rem;
+}
+.avatarWrapper {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+.plusIcon {
+  position: absolute;
+  right: 0.1rem;
+  bottom: 0.1rem;
+}
+.input,
+.roleInput {
+  outline: none;
+  border: none;
+  text-align: left;
+  display: flex;
+  flex: 1;
+}
+
+.roleInput {
+  width: 30%;
+  text-align: right;
+}

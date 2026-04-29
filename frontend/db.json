@@ -1,0 +1,1419 @@
+{
+  "vehicles": [
+    {
+      "id": "1",
+      "plate": "OZI-529",
+      "make": "BMW",
+      "model": "A-033",
+      "year": 2022,
+      "fuel": "Hybrid",
+      "engineCode": "A25A-FXS",
+      "powerKw": 160,
+      "vin": "JTMH23FV90D506640"
+    },
+    {
+      "id": "2",
+      "plate": "ABC-412",
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2021,
+      "fuel": "Petrol",
+      "engineCode": "2ZR-FAE",
+      "powerKw": 103,
+      "vin": "SB1K93BE20E123456"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Mari Malli",
+      "phone": "+358401234567",
+      "email": "mari@example.com"
+    },
+    {
+      "id": "f637",
+      "name": "Ashik",
+      "email": "ashik@gmail.com",
+      "phone": "0987654321"
+    },
+    {
+      "id": "6039",
+      "name": "Robert",
+      "email": "robart@gmail.com",
+      "phone": "0987654321"
+    },
+    {
+      "id": "6d02",
+      "name": "Matt",
+      "email": "matt@gmail.com",
+      "phone": "0987654321"
+    },
+    {
+      "id": "4bba",
+      "name": "Sonia Akter",
+      "email": "asonia3308@gmail.com",
+      "phone": "012345678"
+    }
+  ],
+  "mechanics": [
+    {
+      "id": "1",
+      "name": "Ville Verstäani"
+    },
+    {
+      "id": "2",
+      "name": "Sami Järvinen"
+    },
+    {
+      "id": "c9ca",
+      "name": "John Matt"
+    }
+  ],
+  "parts": [
+    {
+      "id": "1",
+      "name": "Oil filter",
+      "sku": "OF-100",
+      "price": 12.5
+    },
+    {
+      "id": "2",
+      "name": "Engine oil 5W-30 1L",
+      "sku": "OIL-530",
+      "price": 15
+    }
+  ],
+  "workTypes": [
+    {
+      "id": "1",
+      "name": "Oil change",
+      "price": 59,
+      "defaultDurationMin": 60
+    },
+    {
+      "id": "2",
+      "name": "Diagnostics",
+      "price": 79,
+      "defaultDurationMin": 45
+    }
+  ],
+  "workOrders": [
+    {
+      "id": "193b",
+      "plate": "OZI-529",
+      "vehicleId": "1",
+      "status": "done",
+      "createdAt": "2026-03-04T06:25:55.967Z",
+      "faultDescription": "Oil change",
+      "customerId": "1",
+      "mechanicIds": [
+        "1"
+      ],
+      "schedule": {
+        "date": "2026-03-05",
+        "startTime": "09:00",
+        "durationMin": 120,
+        "location": "Espoo",
+        "mainMechanicId": 1
+      },
+      "updatedAt": "2026-03-10T07:58:53.978Z",
+      "estimateStatus": "sent",
+      "estimateSentAt": "2026-03-30T09:32:50.286Z",
+      "estimateToken": "193b-9emiho7oosn-mnczpey6",
+      "estimateLink": "http://localhost:5173/estimate/193b-9emiho7oosn-mnczpey6",
+      "trackingLink": "http://localhost:5173/track/193b-9emiho7oosn-mnczpey6"
+    },
+    {
+      "id": "d9cf",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "status": "in_progress",
+      "createdAt": "2026-03-04T06:38:50.846Z",
+      "faultDescription": "Engine overheating.",
+      "customerId": "f637",
+      "mechanicIds": [
+        "2"
+      ],
+      "schedule": {
+        "date": "2026-03-10",
+        "startTime": "09:00",
+        "durationMin": 120,
+        "location": "Vantaa",
+        "mainMechanicId": 2
+      },
+      "updatedAt": "2026-03-09T08:24:13.088Z",
+      "estimateStatus": "sent",
+      "estimateSentAt": "2026-03-30T09:43:24.252Z",
+      "estimateToken": "d9cf-qsqb8wqmry-mnd0304c",
+      "estimateLink": "http://localhost:5173/estimate/d9cf-qsqb8wqmry-mnd0304c",
+      "trackingLink": "http://localhost:5173/track/d9cf-qsqb8wqmry-mnd0304c"
+    },
+    {
+      "id": "8c1f",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "status": "in_progress",
+      "createdAt": "2026-03-10T07:56:12.059Z",
+      "faultDescription": "oil change",
+      "customerId": "1",
+      "mechanicIds": [
+        "1"
+      ],
+      "schedule": {
+        "date": "2026-03-11",
+        "startTime": "08:00",
+        "durationMin": 120,
+        "location": "Helsinki",
+        "mainMechanicId": 1
+      },
+      "updatedAt": "2026-03-10T07:57:08.223Z"
+    },
+    {
+      "id": "e1e4",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "status": "planned",
+      "createdAt": "2026-03-30T06:32:16.303Z",
+      "faultDescription": "Oil change",
+      "customerId": "1",
+      "mechanicIds": [
+        "1"
+      ],
+      "schedule": {
+        "date": "2026-03-30",
+        "startTime": "10:00",
+        "durationMin": 120,
+        "location": "Helsinki",
+        "mainMechanicId": 1
+      },
+      "updatedAt": "2026-03-30T06:33:39.338Z"
+    },
+    {
+      "id": "7a07",
+      "recordType": "estimate",
+      "itemType": "vehicle",
+      "title": "Toyota Corolla 2021",
+      "identifier": "ABC-412",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "customerId": "4bba",
+      "estimateStatus": "not_sent",
+      "estimateToken": "est-1774864223205-qh5mod",
+      "estimateLink": "http://localhost:5173/estimate/est-1774864223205-qh5mod",
+      "trackingLink": "http://localhost:5173/track/est-1774864223205-qh5mod",
+      "status": "planned",
+      "createdAt": "2026-03-30T09:50:23.205Z",
+      "faultDescription": "Oil change",
+      "mechanicIds": [],
+      "schedule": null
+    },
+    {
+      "id": "8e94",
+      "recordType": "estimate",
+      "itemType": "vehicle",
+      "title": "Toyota Corolla 2021",
+      "identifier": "ABC-412",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "customerId": "4bba",
+      "estimateStatus": "not_sent",
+      "estimateToken": "est-1774864324086-xj7o2k",
+      "estimateLink": "http://localhost:5173/estimate/est-1774864324086-xj7o2k",
+      "trackingLink": "http://localhost:5173/track/est-1774864324086-xj7o2k",
+      "status": "planned",
+      "createdAt": "2026-03-30T09:52:04.086Z",
+      "faultDescription": "",
+      "mechanicIds": [],
+      "schedule": null,
+      "mechanicId": "2"
+    },
+    {
+      "id": "158d",
+      "itemType": "vehicle",
+      "identifier": "ABC-412",
+      "title": "Toyota Corolla 2021",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "vehicleSnapshot": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2021,
+        "fuel": "Petrol",
+        "powerKw": 103,
+        "engineCode": "2ZR-FAE",
+        "vin": "SB1K93BE20E123456"
+      },
+      "status": "planned",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-03-30T09:57:49.248Z",
+      "faultDescription": "",
+      "customerId": null,
+      "customerName": "Sonia Akter",
+      "customerEmail": "asonia3308@gmail.com",
+      "mechanicIds": [],
+      "schedule": null
+    },
+    {
+      "id": "159c",
+      "recordType": "estimate",
+      "customerId": "4bba",
+      "title": "what ever",
+      "faultDescription": "No thanks",
+      "estimateStatus": "sent",
+      "estimateToken": "est-1774865508000-teox32",
+      "estimateLink": "http://localhost:5173/estimate/est-1774865508000-teox32",
+      "trackingLink": "http://localhost:5173/track/est-1774865508000-teox32",
+      "estimateTotals": {
+        "partsTotal": 12.5,
+        "laborTotal": 79,
+        "subTotal": 91.5,
+        "vatRate": 0.24,
+        "vatAmount": 21.96,
+        "total": 113.46000000000001
+      },
+      "status": "planned",
+      "createdAt": "2026-03-30T10:11:48.000Z",
+      "mechanicIds": [],
+      "schedule": null,
+      "estimateSentAt": "2026-03-30T10:11:51.488Z"
+    },
+    {
+      "id": "7855",
+      "recordType": "estimate",
+      "customerId": "4bba",
+      "title": "Estimate",
+      "faultDescription": "nothing",
+      "estimateStatus": "not_sent",
+      "estimateToken": "est-1774865816062-bj8zna",
+      "estimateLink": "http://localhost:5173/estimate/est-1774865816062-bj8zna",
+      "trackingLink": "http://localhost:5173/track/est-1774865816062-bj8zna",
+      "estimateTotals": {
+        "partsTotal": 15,
+        "laborTotal": 79,
+        "subTotal": 94,
+        "vatRate": 0.24,
+        "vatAmount": 22.56,
+        "total": 116.56
+      },
+      "status": "planned",
+      "createdAt": "2026-03-30T10:16:56.062Z",
+      "mechanicIds": [],
+      "schedule": null
+    },
+    {
+      "id": "f462",
+      "recordType": "estimate",
+      "customerId": "4bba",
+      "title": "Estimate",
+      "faultDescription": "",
+      "estimateStatus": "sent",
+      "estimateToken": "est-1774865846795-w6m9fw",
+      "estimateLink": "http://localhost:5173/estimate/est-1774865846795-w6m9fw",
+      "trackingLink": "http://localhost:5173/track/est-1774865846795-w6m9fw",
+      "estimateTotals": {
+        "partsTotal": 12.5,
+        "laborTotal": 79,
+        "subTotal": 91.5,
+        "vatRate": 0.24,
+        "vatAmount": 21.96,
+        "total": 113.46000000000001
+      },
+      "status": "planned",
+      "createdAt": "2026-03-30T10:17:26.795Z",
+      "mechanicIds": [],
+      "schedule": null,
+      "estimateSentAt": "2026-03-30T10:17:37.537Z"
+    },
+    {
+      "id": "cc04",
+      "itemType": "vehicle",
+      "identifier": "ABC-412",
+      "title": "Toyota Corolla 2021",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "vehicleSnapshot": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2021,
+        "fuel": "Petrol",
+        "powerKw": 103,
+        "engineCode": "2ZR-FAE",
+        "vin": "SB1K93BE20E123456"
+      },
+      "status": "planned",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-03-30T10:19:29.561Z",
+      "faultDescription": "",
+      "customerId": null,
+      "mechanicIds": [],
+      "schedule": null,
+      "updatedAt": "2026-03-30T10:19:37.459Z"
+    },
+    {
+      "id": "7781",
+      "itemType": "vehicle",
+      "identifier": "ABC-412",
+      "title": "Toyota Corolla 2021",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "vehicleSnapshot": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2021,
+        "fuel": "Petrol",
+        "powerKw": 103,
+        "engineCode": "2ZR-FAE",
+        "vin": "SB1K93BE20E123456"
+      },
+      "status": "planned",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-03-30T10:33:41.437Z",
+      "faultDescription": "",
+      "customerId": "6039",
+      "mechanicIds": [],
+      "schedule": null
+    },
+    {
+      "id": "b75a",
+      "itemType": "vehicle",
+      "identifier": "ABC-412",
+      "title": "Toyota Corolla 2021",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "vehicleSnapshot": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2021,
+        "fuel": "Petrol",
+        "powerKw": 103,
+        "engineCode": "2ZR-FAE",
+        "vin": "SB1K93BE20E123456"
+      },
+      "status": "planned",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-03-30T10:36:35.103Z",
+      "faultDescription": "",
+      "customerId": "1",
+      "mechanicIds": [],
+      "schedule": null
+    },
+    {
+      "id": "baea",
+      "itemType": "vehicle",
+      "identifier": "ABC-412",
+      "title": "Toyota Corolla 2021",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "vehicleSnapshot": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2021,
+        "fuel": "Petrol",
+        "powerKw": 103,
+        "engineCode": "2ZR-FAE",
+        "vin": "SB1K93BE20E123456"
+      },
+      "status": "planned",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-03-30T10:40:06.367Z",
+      "faultDescription": "",
+      "customerId": null,
+      "mechanicIds": [],
+      "schedule": null
+    },
+    {
+      "id": "1b3d",
+      "itemType": "vehicle",
+      "identifier": "ABC-412",
+      "title": "Toyota Corolla 2021",
+      "plate": "ABC-412",
+      "vehicleId": "2",
+      "vehicleSnapshot": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2021,
+        "fuel": "Petrol",
+        "powerKw": 103,
+        "engineCode": "2ZR-FAE",
+        "vin": "SB1K93BE20E123456"
+      },
+      "status": "in_progress",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-04-01T04:06:31.377Z",
+      "faultDescription": "Oil change",
+      "customerId": "4bba",
+      "mechanicIds": [],
+      "schedule": {
+        "date": "2026-04-01",
+        "startTime": "08:00",
+        "durationMin": 120,
+        "location": "Helsinki",
+        "mainMechanicId": 1
+      },
+      "mechanicId": "1",
+      "updatedAt": "2026-04-01T04:08:16.240Z"
+    },
+    {
+      "id": "43ff",
+      "itemType": "phone",
+      "identifier": "1234",
+      "title": "Apple iPhone 15",
+      "brand": "Apple",
+      "model": "iPhone 15",
+      "serialNumber": "1234",
+      "imei": "987653324",
+      "status": "in_progress",
+      "estimateStatus": "not_sent",
+      "createdAt": "2026-04-01T04:10:32.906Z",
+      "faultDescription": "Battery change",
+      "customerId": "1",
+      "mechanicIds": [],
+      "schedule": {
+        "date": "2026-04-01",
+        "startTime": "08:00",
+        "durationMin": 120,
+        "mainMechanicId": 2
+      },
+      "mechanicId": "2",
+      "updatedAt": "2026-04-01T04:11:09.274Z"
+    }
+  ],
+  "workOrderParts": [
+    {
+      "id": "1",
+      "workOrderId": 5,
+      "partId": 1,
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "19a9",
+      "workOrderId": null,
+      "partId": 2,
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "66c8",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "72d5",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 6,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "5292",
+      "workOrderId": null,
+      "partId": 2,
+      "qty": 4,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "feac",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 4,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "252b",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 8,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "54b7",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 8,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "39b8",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 8,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "b3a2",
+      "workOrderId": null,
+      "partId": 1,
+      "qty": 8,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "81ee",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "1070",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 3,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "d99c",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 3,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "0281",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "5342",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "4f46",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 10,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "913e",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "7c6e",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "491c",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "d2d3",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "326e",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 14,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "bead",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "1de0",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "fa6c",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 19,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "e296",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 5,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "e3dc",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "3ea4",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "33ac",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "6844",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "c3a6",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "d741",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "f7dc",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "ed71",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "065e",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "3f07",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "9abb",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "fddd",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "56e2",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "e50e",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "8b28",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "afc7",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "148e",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "eb4c",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 12,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "537c",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 6,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "8d8d",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "c11e",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "0c78",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 9,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "0670",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "63c8",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "4b9d",
+      "workOrderId": "193b",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "bbca",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "7ab8",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "1f4b",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "ea0a",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "ca16",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "e021",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "bf65",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "452a",
+      "workOrderId": null,
+      "partId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "58ce",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "c2c7",
+      "workOrderId": "d9cf",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "b97d",
+      "workOrderId": "8c1f",
+      "partId": "1",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "31f2",
+      "workOrderId": "e1e4",
+      "partId": "1",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "a89f",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "3d13",
+      "workOrderId": null,
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "d1cc",
+      "workOrderId": "8e94",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "590b",
+      "workOrderId": "8e94",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "3888",
+      "workOrderId": "8e94",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "1125",
+      "workOrderId": "8e94",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "cfa0",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "bcbd",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "4426",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "f4e7",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "339c",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "dc31",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "6acd",
+      "workOrderId": "8e94",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "f85b",
+      "workOrderId": "158d",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "81c7",
+      "workOrderId": "159c",
+      "partId": "1",
+      "qty": 1,
+      "unitPrice": 12.5,
+      "name": "Oil filter"
+    },
+    {
+      "id": "af69",
+      "workOrderId": "7855",
+      "partId": "2",
+      "qty": 1,
+      "unitPrice": 15,
+      "name": "Engine oil 5W-30 1L"
+    },
+    {
+      "id": "4f68",
+      "workOrderId": "f462",
+      "partId": "1",
+      "qty": 1,
+      "unitPrice": 12.5,
+      "name": "Oil filter"
+    },
+    {
+      "id": "8071",
+      "workOrderId": "7781",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "2e4f",
+      "workOrderId": "7781",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "c696",
+      "workOrderId": "7781",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "19be",
+      "workOrderId": "7781",
+      "partId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "6aa5",
+      "workOrderId": "7781",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "6a38",
+      "workOrderId": "7781",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "cfbd",
+      "workOrderId": "7781",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "aa06",
+      "workOrderId": "7781",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "3e63",
+      "workOrderId": "7781",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "ff73",
+      "workOrderId": "7781",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "d937",
+      "workOrderId": "b75a",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "98f9",
+      "workOrderId": "baea",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "b572",
+      "workOrderId": "baea",
+      "partId": "1",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "f2df",
+      "workOrderId": "1b3d",
+      "partId": "1",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "3976",
+      "workOrderId": "43ff",
+      "partId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    }
+  ],
+  "workOrderLabors": [
+    {
+      "id": "1",
+      "workOrderId": 5,
+      "workTypeId": 1,
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "fd2c",
+      "workOrderId": null,
+      "workTypeId": 1,
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "74a7",
+      "workOrderId": null,
+      "workTypeId": 2,
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "1299",
+      "workOrderId": null,
+      "workTypeId": 1,
+      "qty": 12,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "277e",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "95de",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 2,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "e231",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "cf02",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "5e7b",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "7cdb",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "537e",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "94d6",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "2cbc",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "28cd",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "9fe0",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "0641",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "1f64",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "17f5",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "70ce",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "965c",
+      "workOrderId": null,
+      "workTypeId": "2",
+      "qty": 3,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "9cf1",
+      "workOrderId": "193b",
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "4f43",
+      "workOrderId": "d9cf",
+      "workTypeId": "2",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "a206",
+      "workOrderId": "8c1f",
+      "workTypeId": "1",
+      "qty": 2,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "fdfe",
+      "workOrderId": "e1e4",
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "dfaa",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "c090",
+      "workOrderId": null,
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    },
+    {
+      "id": "fa51",
+      "workOrderId": "8e94",
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": true
+    },
+    {
+      "id": "7bec",
+      "workOrderId": "159c",
+      "workTypeId": "2",
+      "qty": 1,
+      "unitPrice": 79,
+      "name": "Diagnostics"
+    },
+    {
+      "id": "6ad1",
+      "workOrderId": "7855",
+      "workTypeId": "2",
+      "qty": 1,
+      "unitPrice": 79,
+      "name": "Diagnostics"
+    },
+    {
+      "id": "3a69",
+      "workOrderId": "f462",
+      "workTypeId": "2",
+      "qty": 1,
+      "unitPrice": 79,
+      "name": "Diagnostics"
+    },
+    {
+      "id": "99f9",
+      "workOrderId": "1b3d",
+      "workTypeId": "1",
+      "qty": 1,
+      "waitCustomerApproval": false
+    }
+  ],
+  "workOrderNotes": [
+    {
+      "id": "1",
+      "workOrderId": 5,
+      "type": "internal",
+      "text": "Check brake pads",
+      "createdAt": "2026-01-09T10:30:00.000Z"
+    },
+    {
+      "id": "ff62",
+      "workOrderId": null,
+      "type": "customer",
+      "text": "Godd Morning",
+      "createdAt": "2026-02-27T11:39:39.301Z"
+    },
+    {
+      "id": "0fec",
+      "workOrderId": null,
+      "type": "internal",
+      "text": "HI",
+      "createdAt": "2026-02-28T05:01:20.383Z"
+    },
+    {
+      "id": "5359",
+      "workOrderId": null,
+      "type": "internal",
+      "text": "Good morning",
+      "createdAt": "2026-03-01T04:56:50.374Z"
+    },
+    {
+      "id": "245c",
+      "workOrderId": null,
+      "type": "internal",
+      "text": "You have complete the job carefully",
+      "createdAt": "2026-03-01T06:17:02.679Z"
+    },
+    {
+      "id": "0d44",
+      "workOrderId": null,
+      "type": "internal",
+      "text": "Start the work",
+      "createdAt": "2026-03-01T07:09:02.207Z"
+    },
+    {
+      "id": "0342",
+      "workOrderId": null,
+      "type": "internal",
+      "text": "Start from today",
+      "createdAt": "2026-03-01T20:50:33.022Z"
+    }
+  ],
+  "invoices": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

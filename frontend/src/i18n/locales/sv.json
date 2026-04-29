@@ -1,0 +1,92 @@
+{
+  "common": {
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "add": "Lägg till",
+    "edit": "Redigera",
+    "delete": "Ta bort",
+    "reset": "Återställ"
+  },
+  "sidebar": {
+    "dashboard": "Instrumentpanel",
+    "calendar": "Kalender",
+    "workOrders": "Arbetsorder",
+    "customers": "Kunder",
+    "invoices": "Fakturor",
+    "parts": "Delar",
+    "users": "Användare",
+    "settings": "Inställningar",
+    "sections": {
+      "workspace": "Arbetsyta",
+      "system": "System"
+    },
+    "language": "Språk"
+  },
+  "user": {
+    "title": "Användare",
+    "admin": "Administratör",
+    "worker": "Arbetare",
+    "trainee": "Praktikant",
+    "allRoles": "Alla roller",
+    "filterByRole": "Filtrera efter roll",
+    "createNewUser": "Skapa ny användare",
+    "searchPlaceholder": "🔍 Sök användarnamn, e-post,...",
+    "noUsersFound": "Inga användare hittades",
+    "resetPassword": "Återställ lösenord",
+    "newPassword": "Nytt lösenord",
+    "confirmNewPassword": "Bekräfta nytt lösenord"
+  },
+  "customer": {
+    "title": "Kunder",
+    "company": "Företag",
+    "individual": "Privatperson",
+    "allTypes": "Alla typer",
+    "filterByType": "Filtrera efter typ",
+    "createNewCustomer": "Skapa ny kund",
+    "searchPlaceholder": "🔍 Sök kundnamn, e-post,...",
+    "noCustomersFound": "Inga kunder hittades",
+    "ordersLabel": "Order:"
+  },
+  "part": {
+    "title": "Delar",
+    "createNewPart": "Skapa ny del",
+    "searchPlaceholder": "Sök del...",
+    "noPartsFound": "Inga delar hittades",
+    "model": "Modell",
+    "quantity": "Antal",
+    "priceEur": "Pris (€)",
+    "pricePlusTax": "Pris + moms",
+    "priceBeforeTax": "Pris (före moms)",
+    "category": "Kategori",
+    "manufacturer": "Tillverkare",
+    "link": "Länk",
+    "allCategories": "Alla kategorier",
+    "custom": "+ Anpassad..."
+  },
+  "modals": {
+    "addNewCustomerTitle": "Lägg till en ny kund",
+    "addNewUserTitle": "Lägg till en ny användare",
+    "addNewPartTitle": "Lägg till en ny del",
+    "deleteUserTitle": "Ta bort användare",
+    "deleteCustomerTitle": "Ta bort kund",
+    "deletePartTitle": "Ta bort del",
+    "deleteUserConfirm": "Ta bort denna användare från systemet?",
+    "deleteCustomerConfirm": "Ta bort denna kund från systemet?",
+    "deletePartConfirm": "Ta bort denna del från systemet?",
+    "resetPasswordTitle": "Återställ lösenord"
+  },
+  "toast": {
+    "invalidEmail": "Ogiltig e-postadress",
+    "updateSaved": "Uppdateringen sparades",
+    "partCreated": "Del skapad",
+    "partUpdated": "Del uppdaterad",
+    "userCreated": "Användare skapad",
+    "userDeleted": "Användare borttagen.",
+    "customerDeleted": "Kund borttagen.",
+    "passwordResetSuccess": "Lösenordet återställdes!",
+    "passwordResetFailed": "Det gick inte att återställa lösenordet.",
+    "allFieldsRequired": "Alla fält är obligatoriska.",
+    "passwordMinLength": "Lösenordet måste vara minst 8 tecken.",
+    "passwordMismatch": "Lösenordet och bekräftelsen matchar inte."
+  }
+}
